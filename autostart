@@ -1,0 +1,6 @@
+tint2 -c ~/.tint2rc &
+nitrogen --restore &
+xset r rate 200 30 &
+redshift &
+synapse &
+volumeicon &
