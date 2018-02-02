@@ -1,0 +1,12 @@
+[user]
+	email = joao.neto.guimaraes@gmail.com
+	name = netoguimaraes
+
+[color]
+	ui = auto
+
+[push]
+	default = current 
+
+[fetch]
+	prune = true

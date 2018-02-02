@@ -16,6 +16,11 @@ vim:
 	rm ~/.vimrc && cp ./vimrc ~/.vimrc
 	vim -c ':PluginInstall' 
 
+.PHONY: git
+git:
+	test -s ~/.gitconfig && rm ~/.gitconfig || true
+	cp ./gitconfig ~/.gitconfig
+
 .PHONY: openbox
 openbox: 
 	test -s ~/.config/openbox/autostart && rm ~/.config/openbox/autostart || true
