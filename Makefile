@@ -1,9 +1,9 @@
 #INSTALL_PROVIDER="YOU HAVE NO PROVIDER CONFIGURED, OPEN THE MAKEFILE AND EDIT THIS LINE"
-INSTALL_PROVIDER = $(shell which yaourt)
+INSTALL_PROVIDER = $(shell which apt)
 
 .PHONY: apps
 apps:
-	$(shell $(INSTALL_PROVIDER) -S openbox nitrogen arandr tint2 synapse volumeicon redshift)
+	$(shell $(INSTALL_PROVIDER) install -y openbox nitrogen arandr tint2 synapse volumeicon redshift)
 
 .PHONY: bash
 bash:
@@ -27,4 +27,4 @@ openbox:
 	test ! -d ~/.config/openbox && mkdir ~/.config/openbox || true
 	cp ./autostart ~/.config/openbox/
 	test -s ~/.tint2rc && rm ~/.tint2rc || true
-	cp ./tint2conf ~/.config/
+	cp ./tint2rc ~/
