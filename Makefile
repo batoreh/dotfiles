@@ -27,4 +27,4 @@ openbox:
 	test ! -d ~/.config/openbox && mkdir ~/.config/openbox || true
 	cp ./autostart ~/.config/openbox/
 	test -s ~/.tint2rc && rm ~/.tint2rc || true
-	cp ./tint2rc ~/
+	cp ./tint2rc ~/.tint2rc
