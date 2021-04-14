@@ -1,0 +1,2 @@
+users http://localhost:3000/users
+requets http://localhost:3000/requests
