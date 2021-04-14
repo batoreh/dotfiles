@@ -7,12 +7,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'tpope/vim-fugitive'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ervandew/supertab'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
@@ -34,7 +30,6 @@ call vundle#end()
 syntax on
 set mouse=a
 set nonumber
-set ruler
 set showcmd
 set autoindent
 set cursorline
@@ -79,15 +74,6 @@ let NERDChristmasTree = 1
 let NERDTreeHighlightCursorline = 1
 
 au BufRead,BufNewFile *.todo setfiletype todo
-
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
-
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.vue, *.jsx, *.js, *.ts, *.erb'
-
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 filetype plugin indent on
 autocmd Filetype php setlocal sts=4 sw=4 expandtab
