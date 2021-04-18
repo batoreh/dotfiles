@@ -1,2 +1,4 @@
 users http://localhost:3000/users
 requets http://localhost:3000/requests
+postRegister POST http://localhost:3000/users/postRegister id=5 telephoneNumber=84999257589 tags=1,2 documentType=1 documentNumber=123123123 documentPicture='123123' userId=4
+updateUser POST http://localhost:3000/users/update id=5 telephoneNumber=84999257588 tags=1,2 name='Carlito'
